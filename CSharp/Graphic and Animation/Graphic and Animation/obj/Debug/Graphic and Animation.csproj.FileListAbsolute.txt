@@ -1,0 +1,11 @@
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\bin\Debug\Graphic and Animation.exe.config
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\bin\Debug\Graphic and Animation.exe
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\bin\Debug\Graphic and Animation.pdb
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic and Animation.csproj.AssemblyReference.cache
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic and Animation.csproj.SuggestedBindingRedirects.cache
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic_and_Animation.Main.resources
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic_and_Animation.Properties.Resources.resources
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic and Animation.csproj.GenerateResource.cache
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic and Animation.csproj.CoreCompileInputs.cache
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic and Animation.exe
+H:\SCADA\SCADA_Projects\CSharp\Graphic and Animation\Graphic and Animation\obj\Debug\Graphic and Animation.pdb
