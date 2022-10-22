@@ -41,6 +41,17 @@
             this.tbSetLevel = new System.Windows.Forms.TextBox();
             this.btConfirm = new System.Windows.Forms.Button();
             this.lbLevel = new System.Windows.Forms.Label();
+            this.pbMotor = new System.Windows.Forms.PictureBox();
+            this.pbAgitator = new System.Windows.Forms.PictureBox();
+            this.pbDirection = new System.Windows.Forms.PictureBox();
+            this.pbScrew = new System.Windows.Forms.PictureBox();
+            this.pbStart = new System.Windows.Forms.PictureBox();
+            this.lbForStatus = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMotor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAgitator)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDirection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScrew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStart)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTitle
@@ -103,7 +114,7 @@
             // 
             this.lbMotor.AutoSize = true;
             this.lbMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMotor.Location = new System.Drawing.Point(162, 170);
+            this.lbMotor.Location = new System.Drawing.Point(189, 255);
             this.lbMotor.Name = "lbMotor";
             this.lbMotor.Size = new System.Drawing.Size(39, 20);
             this.lbMotor.TabIndex = 4;
@@ -123,7 +134,7 @@
             // tbSetLevel
             // 
             this.tbSetLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSetLevel.Location = new System.Drawing.Point(499, 189);
+            this.tbSetLevel.Location = new System.Drawing.Point(499, 233);
             this.tbSetLevel.Name = "tbSetLevel";
             this.tbSetLevel.Size = new System.Drawing.Size(100, 22);
             this.tbSetLevel.TabIndex = 6;
@@ -132,7 +143,7 @@
             // btConfirm
             // 
             this.btConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConfirm.Location = new System.Drawing.Point(615, 188);
+            this.btConfirm.Location = new System.Drawing.Point(615, 232);
             this.btConfirm.Name = "btConfirm";
             this.btConfirm.Size = new System.Drawing.Size(76, 26);
             this.btConfirm.TabIndex = 7;
@@ -144,18 +155,85 @@
             // 
             this.lbLevel.AutoSize = true;
             this.lbLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLevel.Location = new System.Drawing.Point(499, 228);
+            this.lbLevel.Location = new System.Drawing.Point(499, 272);
             this.lbLevel.Name = "lbLevel";
             this.lbLevel.Size = new System.Drawing.Size(28, 16);
             this.lbLevel.TabIndex = 8;
             this.lbLevel.Text = "###";
+            // 
+            // pbMotor
+            // 
+            this.pbMotor.Location = new System.Drawing.Point(140, 327);
+            this.pbMotor.Name = "pbMotor";
+            this.pbMotor.Size = new System.Drawing.Size(100, 82);
+            this.pbMotor.TabIndex = 9;
+            this.pbMotor.TabStop = false;
+            // 
+            // pbAgitator
+            // 
+            this.pbAgitator.BackColor = System.Drawing.Color.Transparent;
+            this.pbAgitator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbAgitator.Location = new System.Drawing.Point(51, 342);
+            this.pbAgitator.Name = "pbAgitator";
+            this.pbAgitator.Size = new System.Drawing.Size(72, 131);
+            this.pbAgitator.TabIndex = 10;
+            this.pbAgitator.TabStop = false;
+            // 
+            // pbDirection
+            // 
+            this.pbDirection.BackColor = System.Drawing.Color.Transparent;
+            this.pbDirection.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbDirection.Location = new System.Drawing.Point(615, 141);
+            this.pbDirection.Name = "pbDirection";
+            this.pbDirection.Size = new System.Drawing.Size(46, 85);
+            this.pbDirection.TabIndex = 11;
+            this.pbDirection.TabStop = false;
+            this.pbDirection.Click += new System.EventHandler(this.pbDirection_Click);
+            // 
+            // pbScrew
+            // 
+            this.pbScrew.BackColor = System.Drawing.Color.Transparent;
+            this.pbScrew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbScrew.Location = new System.Drawing.Point(140, 424);
+            this.pbScrew.Name = "pbScrew";
+            this.pbScrew.Size = new System.Drawing.Size(140, 49);
+            this.pbScrew.TabIndex = 12;
+            this.pbScrew.TabStop = false;
+            // 
+            // pbStart
+            // 
+            this.pbStart.BackColor = System.Drawing.Color.Transparent;
+            this.pbStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbStart.Location = new System.Drawing.Point(157, 141);
+            this.pbStart.Name = "pbStart";
+            this.pbStart.Size = new System.Drawing.Size(47, 41);
+            this.pbStart.TabIndex = 13;
+            this.pbStart.TabStop = false;
+            this.pbStart.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbStart_MouseDown);
+            this.pbStart.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbStart_MouseUp);
+            // 
+            // lbForStatus
+            // 
+            this.lbForStatus.AutoSize = true;
+            this.lbForStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbForStatus.Location = new System.Drawing.Point(51, 255);
+            this.lbForStatus.Name = "lbForStatus";
+            this.lbForStatus.Size = new System.Drawing.Size(109, 20);
+            this.lbForStatus.TabIndex = 14;
+            this.lbForStatus.Text = "Motor State:";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 485);
+            this.Controls.Add(this.lbForStatus);
+            this.Controls.Add(this.pbStart);
+            this.Controls.Add(this.pbScrew);
+            this.Controls.Add(this.pbDirection);
+            this.Controls.Add(this.pbAgitator);
+            this.Controls.Add(this.pbMotor);
             this.Controls.Add(this.lbLevel);
             this.Controls.Add(this.btConfirm);
             this.Controls.Add(this.tbSetLevel);
@@ -168,6 +246,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "SCADA with CSharp";
+            this.Load += new System.EventHandler(this.Main_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbMotor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAgitator)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDirection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScrew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +270,12 @@
         private System.Windows.Forms.TextBox tbSetLevel;
         private System.Windows.Forms.Button btConfirm;
         private System.Windows.Forms.Label lbLevel;
+        private System.Windows.Forms.PictureBox pbMotor;
+        private System.Windows.Forms.PictureBox pbAgitator;
+        private System.Windows.Forms.PictureBox pbDirection;
+        private System.Windows.Forms.PictureBox pbScrew;
+        private System.Windows.Forms.PictureBox pbStart;
+        private System.Windows.Forms.Label lbForStatus;
     }
 }
 
